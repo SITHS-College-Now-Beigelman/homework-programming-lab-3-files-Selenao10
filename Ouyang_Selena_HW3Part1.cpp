@@ -21,14 +21,14 @@ int main() {
   inFile.open("transactions.txt");
   outFile.open("outData.txt");
   
-  inFile >> totalMoney; //assigns variable to input
+  inFile >> totalMoney; //Assigns variable to input
   outFile << fixed << setprecision(2); //two decimal places
   outFile << "Starting Balance: " << totalMoney << endl << endl; //prints starting balance
 
   //runs the code until it reaches 7 transactions
-  for (numTransactions = 0; numTransactions <= 7; numTransactions++) {
-
-    inFile >> typeofTransaction >> transactionAmount;
+  for (numTransactions = 0; numTransactions <= 7; numTransactions++) 
+  {
+    inFile >> typeofTransaction >> transactionAmount; //order that variables are assigned to the variables in the inputs
     
     //if the type of transaction is a withdrawal, transaction amount is subtracted from tota
     if (typeofTransaction == 'W') {
