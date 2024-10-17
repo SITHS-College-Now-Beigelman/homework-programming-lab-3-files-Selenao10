@@ -26,7 +26,7 @@ int main() {
   outFile << "Starting Balance: " << totalMoney << endl << endl; //prints starting balance
 
   //runs the code until it reaches 7 transactions
-  for (numTransactions = 0; numTransactions <= 7; numTransactions++) 
+  for (numTransactions = 0; numTransactions < 7; numTransactions++) 
   {
     inFile >> typeofTransaction >> transactionAmount; //order that variables are assigned to the variables in the inputs
     
