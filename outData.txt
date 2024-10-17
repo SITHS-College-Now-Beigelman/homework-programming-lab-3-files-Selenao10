@@ -14,7 +14,5 @@ Amount of Transaction: 1000.00
 Balance after transaction: 5150.00
 Amount of Transaction: -20.00
 Balance after transaction: 5130.00
-Amount of Transaction: -0.00
-Balance after transaction: 5130.00
 
 Ending Balance: 5130.00
