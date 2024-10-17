@@ -11,7 +11,6 @@ using namespace std;
 int main() {
 
   ifstream inFile;  // input file stream variable
-  ofstream outFile; // output file stream variable
 
   //assigning variables
   float totalMoney, numTransactions, transactionAmount;  
@@ -19,39 +18,37 @@ int main() {
 
   // open files
   inFile.open("transactions.txt");
-  outFile.open("outData.txt");
-  
+
   inFile >> totalMoney; //Assigns variable to input
-  outFile << fixed << setprecision(2); //two decimal places
-  outFile << "Starting Balance: " << totalMoney << endl << endl; //prints starting balance
+  cout << fixed << setprecision(2); //two decimal places
+  cout << "Starting Balance: " << totalMoney << endl << endl; //prints starting balance
 
   //runs the code until it reaches 7 transactions
   for (numTransactions = 0; numTransactions < 7; numTransactions++) 
   {
     inFile >> typeofTransaction >> transactionAmount; //order that variables are assigned to the variables in the inputs
-    
+
     //if the type of transaction is a withdrawal, transaction amount is subtracted from tota
     if (typeofTransaction == 'W') {
-      outFile << "Amount of Transaction: " << -transactionAmount << endl;
-      outFile << "Balance after transaction: " << totalMoney - transactionAmount << endl; 
+      cout << "Amount of Transaction: " << -transactionAmount << endl;
+      cout << "Balance after transaction: " << totalMoney - transactionAmount << endl; 
       totalMoney = totalMoney - transactionAmount;
       transactionAmount = 0; //resets transaction amount to 0
       } 
-      
+
     //else if the type of transaction is a deposit, transaction amount is added to total
     else if (typeofTransaction == 'D') {
-      outFile << "Amount of Transaction: " << transactionAmount << endl;
-      outFile << "Balance after transaction: " << totalMoney + transactionAmount << endl; 
+      cout << "Amount of Transaction: " << transactionAmount << endl;
+      cout << "Balance after transaction: " << totalMoney + transactionAmount << endl; 
       totalMoney = totalMoney + transactionAmount;
       transactionAmount = 0; //resets transaction amount to 0
     }
   }
     //Prints ending balance
-    outFile << endl << "Ending Balance: " << totalMoney << endl; 
+    cout << endl << "Ending Balance: " << totalMoney << endl; 
 
   // close files
   inFile.close();
-  outFile.close();
 
   return 0;
 }
@@ -72,8 +69,6 @@ Balance after transaction: 4150.00
 Amount of Transaction: 1000.00
 Balance after transaction: 5150.00
 Amount of Transaction: -20.00
-Balance after transaction: 5130.00
-Amount of Transaction: -0.00
 Balance after transaction: 5130.00
 
 Ending Balance: 5130.00
