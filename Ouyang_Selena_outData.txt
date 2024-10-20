@@ -10,6 +10,11 @@ D_________1000.00________________5150.00
 W___________20.00________________5130.00
 
 Final Balance: $5130.00
-Total Withdrawals: 4
-Total Deposits: 3
-Total Transacitons: 7
+
+Number of Withdrawals: 4
+Total Withdrawl Amount: $1060.00
+
+Number of Deposits: 3
+Total Deposit Amount: $1190.00
+
+Number of Total Transactions: 7
