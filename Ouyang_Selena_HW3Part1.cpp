@@ -17,7 +17,7 @@ int main() {
   char typeofTransaction; 
 
   // open files
-  inFile.open("transaction.txt");
+  inFile.open("Ouyang_Selena_transaction.txt");
 
   inFile >> totalMoney; //Assigns variable to input
   cout << fixed << setprecision(2); //two decimal places
