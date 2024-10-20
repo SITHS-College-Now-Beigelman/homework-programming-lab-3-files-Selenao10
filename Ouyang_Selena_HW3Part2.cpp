@@ -19,7 +19,7 @@ int main() {
   char typeofTransaction; 
 
   // open files
-  inFile.open("userInput.txt");
+  inFile.open("tansactions.txt");
   outFile.open("outData.txt");
 
   //two decimal places
