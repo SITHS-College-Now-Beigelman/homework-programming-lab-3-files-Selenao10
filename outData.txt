@@ -1,18 +1,15 @@
-Starting Balance: 5000.00
+Starting Balance: $5000.00
 
-Amount of Transaction: -200.00
-Balance after transaction: 4800.00
-Amount of Transaction: -800.00
-Balance after transaction: 4000.00
-Amount of Transaction: -40.00
-Balance after transaction: 3960.00
-Amount of Transaction: 90.00
-Balance after transaction: 4050.00
-Amount of Transaction: 100.00
-Balance after transaction: 4150.00
-Amount of Transaction: 1000.00
-Balance after transaction: 5150.00
-Amount of Transaction: -20.00
-Balance after transaction: 5130.00
+Type_______Amount________________Balance
+W__________200.00________________4800.00
+W__________800.00________________4000.00
+W___________40.00________________3960.00
+D___________90.00________________4050.00
+D__________100.00________________4150.00
+D_________1000.00________________5150.00
+W___________20.00________________5130.00
 
-Ending Balance: 5130.00
+Final Balance: $5130.00
+Total Withdrawals: 4
+Total Deposits: 3
+Total Transacitons: 7
